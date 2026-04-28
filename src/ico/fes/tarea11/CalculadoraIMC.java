@@ -34,13 +34,18 @@ public class CalculadoraIMC extends Frame {
             }
         });
 
-        this.add(lblPeso); this.add(txtPeso);
-        this.add(lblAltura); this.add(txtAltura);
-        this.add(new Label("")); this.add(btnCalcular);
+        this.add(lblPeso);
+        this.add(txtPeso);
+        this.add(lblAltura);
+        this.add(txtAltura);
+        this.add(new Label(""));
+        this.add(btnCalcular);
         this.add(lblResultado);
 
         this.addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) { System.exit(0); }
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
         });
 
         this.setVisible(true);
